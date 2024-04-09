@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
+
+.single-page_itemPanel__B9bbw {
+  padding: 0 !important;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  color: #333;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+  background-color: #ccc;
+}
+
+.pagination .disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.pagination a,
+.pagination span {
+  margin: 0 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+}
+.pagination .active {
+  font-weight: bold;
+  color: #0070f3; /* Active link color */
+}
+
+@media (max-width: 767px) {
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+  }
+
+  .pagination li {
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  .pagination li.active {
+    font-weight: bold;
+  }
+}

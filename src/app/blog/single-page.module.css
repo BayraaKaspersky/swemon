@@ -1,0 +1,112 @@
+.list li {
+  margin: 0.75rem 0;
+}
+
+.info {
+  color: rgb(0, 49, 0);
+  background-color: rgb(230, 246, 230);
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.accordion {
+  border: 1px solid #ccc;
+  /* margin-top: 1rem; */
+}
+
+.item {
+  border-bottom: 1px solid #ccc;
+}
+
+.itemBtn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: left;
+  color: #000;
+  background-color: transparent;
+  border: none;
+}
+
+.itemBtn:hover {
+  background-color: #f3f3f3;
+}
+
+.itemBtnExpanded {
+  background-color: #e7e7e7;
+}
+
+.itemContent {
+  transition: height 0.25s cubic-bezier(0, 0, 0, 1);
+}
+
+.itemPanel {
+  padding: 1rem;
+}
+
+.chevron {
+  margin-left: auto;
+  transition: transform 0.25s cubic-bezier(0, 0, 0, 1);
+}
+
+.itemBtnExpanded .chevron {
+  transform: rotate(180deg);
+}
+
+.single-page_itemPanel__B9bbw {
+  padding: 0;
+}
+ul.sideMenu {
+  margin: 0;
+  padding: 0px;
+  font-size: large;
+  background-color: #f7f2f2;
+}
+ul.sideMenu li {
+  cursor: pointer;
+  font-size: 13px;
+  margin-left: 10px;
+  border-bottom: 0.5px solid black;
+  padding: 8px 10px 2px 5px;
+}
+
+ul.sideMenu li:nth-last-child(1) {
+  border-bottom: 0;
+}
+
+.chevron-hide {
+  overflow: hidden;
+  display: none;
+}
+
+.item {
+  border: none; /* Remove default border */
+}
+
+/* Define styles for the accordion button */
+.itemBtn {
+  padding: 10px 20px; /* Adjust padding as needed */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Define styles for the expanded accordion button */
+.itemBtnExpanded {
+  background-color: #f0f0f0; /* Example background color */
+}
+
+/* Define styles for the accordion content */
+.itemContent {
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+/* Define styles for the nested accordion items */
+.itemPanel .item {
+  margin-left: 20px; /* Adjust the indentation size */
+}
